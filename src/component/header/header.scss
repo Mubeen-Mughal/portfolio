@@ -1,5 +1,6 @@
+@import "../../global.scss";
 .topbar{
-    background:#15023a;
+    background:$mainColor;
     width: 100%;
     height:50px;
     position:fixed;
