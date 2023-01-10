@@ -6,10 +6,10 @@
          }
     .sections{
          width: 100%;
-         height: calc(100vh - 50px);
+         height: calc(100vh - 104px);
          background:lightsalmon;
          position: relative;
-         top:50px; 
+         top:104px; 
          scroll-snap-type: y mandatory!important;
          scrollbar-width: none; //for firefox;
          &::-webkit-scrollbar{
@@ -17,9 +17,16 @@
          }
     > *{
         width: 100%;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 104px);
         scroll-snap-align:center!important;
     }
     } 
 
+}
+body{
+    scroll-snap-type: y mandatory!important;
+    scrollbar-width: none; //for firefox;
+    &::-webkit-scrollbar{
+       display: none; 
+    }
 }
