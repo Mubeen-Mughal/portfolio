@@ -25,6 +25,9 @@
 .active{
     right: 0px;
 }
+.nonactive{
+    right:-300px; 
+}
 ul.menu {
     list-style-type: none;
     display: flex;
@@ -47,8 +50,8 @@ ul.menu {
     text-decoration: none;
     color:white;
     transition: .5s; 
-    font-size: 2.0rem;
-    font-weight: normal; 
+    font-size: 2.6rem;
+    font-weight: 300; 
     }
     &{
         color:#14D8EE;

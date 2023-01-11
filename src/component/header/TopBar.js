@@ -10,7 +10,7 @@ export default function TopBar() {
     <div className='topbar'>
      <div className='wrapper'>
        <div className='left'>
-        <a href="#intro"><img src={mylogo} alt="Mubeen logo" /></a>
+        <a href="#intro"><img src={mylogo} alt="Mubeen logo"/></a>
        </div>
        <div className='right'>
         {
@@ -23,21 +23,32 @@ export default function TopBar() {
      </div>
      {/* Responsive Menu */}
      
-     <ul className={`menu ${toggle ? 'right-[0px]' : 'right:[0-300px]'}`
+     <ul className={`menu ${toggle ? 'active' : 'nonactive'}`
      }>
-          <li>
-            <a href="#intro">Home</a>
+          <li 
+            onClick={()=>settoggle(false)}
+          >
+            <a href="#intro"
+            >Home</a>
           </li>
-          <li>
+          <li
+           onClick={()=>settoggle(false)}
+          >
             <a href="#portfolio">Portfolio</a>
           </li>
-          <li>
+          <li
+           onClick={()=>settoggle(false)}
+          >
             <a href="#works">Works</a>
           </li>
-          <li>
+          <li
+           onClick={()=>settoggle(false)}
+          >
             <a href="#testimonial">Testimonials</a>
           </li>
-          <li>
+          <li
+           onClick={()=>settoggle(false)}
+          >
             <a href="#contact">Contact</a>
           </li>
      </ul>
